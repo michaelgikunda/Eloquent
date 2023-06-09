@@ -56,3 +56,4 @@ Eloquent is released under the MIT License.
 Thank you for your interest in Eloquent! We hope you enjoy using our online clothing store.
 
 ### Preview
+![Eloguent Fashion](https://github.com/michaelgikunda/Eloquent/assets/125220330/5da39645-5df1-4fee-b0e1-c9e35a1940d8)
