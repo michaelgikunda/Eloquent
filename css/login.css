@@ -54,11 +54,11 @@ body
    border-radius: 0px;
    padding: 0;
    margin: 0;
-   text-align: left;
+   text-align: center;
 }
 #wb_Text1 div
 {
-   text-align: left;
+   text-align: center;
 }
 .DropdownMenu1 .nav
 {
@@ -588,46 +588,6 @@ body
    margin: 0;
    padding: 0;
 }
-#wb_Icon1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-   border-radius: 0px;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_Icon1 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#Icon1
-{
-   height: 18px;
-   width: 18px;
-}
-#Icon1 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 18px;
-   line-height: 18px;
-   vertical-align: middle;
-   width: 17px;
-}
-#wb_Icon1:hover #Icon1 i
-{
-   color: #FFFFFF;
-}
 #wb_Icon3
 {
    background-color: transparent;
@@ -686,20 +646,6 @@ body
 {
    text-align: center;
 }
-#wb_Text3 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text3 div
-{
-   text-align: center;
-}
 #wb_Marquee1 
 {
    background-color: transparent;
@@ -740,255 +686,283 @@ body
    transform: translateX(-100%);
    }
 }
-#RollOver1
+#Editbox1
 {
-   border: 0px solid #000000;
+   border: 0px solid #C5C5C5;
    border-radius: 0px;
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: "Josefin Sans";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 17px;
+   box-sizing: border-box;
+   text-align: left;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 23px 4px 23px 30px;
+}
+#Editbox1:focus
+{
+   outline: 0;
+}
+#wb_Editbox1
+{
    margin: 0;
 }
-#RollOver1 a
+#Editbox1::placeholder
 {
-   display: block;
-   position: relative;
-   height: 100%;
-   width: 100%;
-}
-#RollOver1 a img
-{
-   position: absolute;
-   z-index: 1;
-   border-width: 0;
-}
-#RollOver1 span
-{
-   display: block;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: 2;
-   transition: all 400ms linear;
-}
-#RollOver1 .hover
-{
-   opacity: 0;
-   transition: all 400ms linear;
-}
-#RollOver1:hover .hover
-{
+   color: #C0C0C0;
    opacity: 1;
 }
-#RollOver1:hover span
+#Editbox1::-ms-input-placeholder
 {
-   opacity: 0;
+   color: #C0C0C0;
 }
-#RollOver1 img
+#Editbox1-label
 {
-   border-width: 0;
+   display: flex;
+   align-items: center;
    position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
    left: 0;
-   top: 0;
-   width: 100%;
    height: 100%;
+   pointer-events: none;
+   box-sizing: border-box;
+   border: 1px solid transparent;
+   color: #C0C0C0;
+   font-family: "Josefin Sans";
+   font-weight: normal;
+   font-size: 17px;
+   margin-left: 30px;
+   transform-origin: 0 0;
+   transition: opacity .1s ease-in-out,transform .1s ease-in-out;
 }
-#RollOver2
+#Editbox1::-moz-placeholder
 {
-   border: 0px solid #000000;
+   color: transparent;
+}
+#Editbox1::placeholder
+{
+   color: transparent;
+}
+#Editbox1:not(:-moz-placeholder-shown)
+{
+   padding-top: 32px;
+   padding-bottom: 15px;
+}
+#Editbox1:focus, #Editbox1:not(:placeholder-shown)
+{
+   padding-top: 32px;
+   padding-bottom: 15px;
+}
+#Editbox1:-webkit-autofill
+{
+   padding-top: 32px;
+   padding-bottom: 15px;
+}
+#Editbox1:not(:-moz-placeholder-shown)~label
+{
+   opacity: .65;
+   transform: scale(.85) translateY(calc(-50% - 0.8em));
+}
+#Editbox1:focus~label, #Editbox1:not(:placeholder-shown)~label
+{
+   opacity: .65;
+   transform: scale(.85) translateY(calc(-50% - 0.8em));
+}
+#Editbox1:-webkit-autofill~label
+{
+   opacity: .65;
+   transform: scale(.85) translateY(calc(-50% - 0.8em));
+}
+#Editbox2
+{
+   border: 0px solid #C5C5C5;
    border-radius: 0px;
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: "Josefin Sans";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 17px;
+   box-sizing: border-box;
+   text-align: left;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 23px 4px 23px 30px;
+}
+#Editbox2:focus
+{
+   outline: 0;
+}
+#wb_Editbox2
+{
    margin: 0;
 }
-#RollOver2 a
+#Editbox2::placeholder
 {
-   display: block;
-   position: relative;
-   height: 100%;
-   width: 100%;
-}
-#RollOver2 a img
-{
-   position: absolute;
-   z-index: 1;
-   border-width: 0;
-}
-#RollOver2 span
-{
-   display: block;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: 2;
-   transition: all 400ms linear;
-}
-#RollOver2 .hover
-{
-   opacity: 0;
-   transition: all 400ms linear;
-}
-#RollOver2:hover .hover
-{
+   color: #C0C0C0;
    opacity: 1;
 }
-#RollOver2:hover span
+#Editbox2::-ms-input-placeholder
 {
-   opacity: 0;
+   color: #C0C0C0;
 }
-#RollOver2 img
+#Editbox2-label
 {
-   border-width: 0;
+   display: flex;
+   align-items: center;
    position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
    left: 0;
-   top: 0;
-   width: 100%;
    height: 100%;
+   pointer-events: none;
+   box-sizing: border-box;
+   border: 1px solid transparent;
+   color: #C0C0C0;
+   font-family: "Josefin Sans";
+   font-weight: normal;
+   font-size: 17px;
+   margin-left: 30px;
+   transform-origin: 0 0;
+   transition: opacity .1s ease-in-out,transform .1s ease-in-out;
 }
-#RollOver3
+#Editbox2::-moz-placeholder
 {
-   border: 0px solid #000000;
-   border-radius: 0px;
+   color: transparent;
+}
+#Editbox2::placeholder
+{
+   color: transparent;
+}
+#Editbox2:not(:-moz-placeholder-shown)
+{
+   padding-top: 32px;
+   padding-bottom: 15px;
+}
+#Editbox2:focus, #Editbox2:not(:placeholder-shown)
+{
+   padding-top: 32px;
+   padding-bottom: 15px;
+}
+#Editbox2:-webkit-autofill
+{
+   padding-top: 32px;
+   padding-bottom: 15px;
+}
+#Editbox2:not(:-moz-placeholder-shown)~label
+{
+   opacity: .65;
+   transform: scale(.85) translateY(calc(-50% - 0.8em));
+}
+#Editbox2:focus~label, #Editbox2:not(:placeholder-shown)~label
+{
+   opacity: .65;
+   transform: scale(.85) translateY(calc(-50% - 0.8em));
+}
+#Editbox2:-webkit-autofill~label
+{
+   opacity: .65;
+   transform: scale(.85) translateY(calc(-50% - 0.8em));
+}
+#loginBtn
+{
+   font-family: "Josefin Sans";
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   display: inline-block;
+   position: relative;
+   vertical-align: middle;
+   user-select: none;
+   overflow: visible;
+   text-decoration: none;
+   cursor: pointer;
    margin: 0;
+   padding: 0;
+   text-align: center;
+   vertical-align: top;
 }
-#RollOver3 a
-{
-   display: block;
-   position: relative;
-   height: 100%;
-   width: 100%;
-}
-#RollOver3 a img
+#loginBtn .ui-button
 {
    position: absolute;
-   z-index: 1;
-   border-width: 0;
+   padding: 0;
 }
-#RollOver3 span
+#loginBtn.ui-corner-all
 {
-   display: block;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: 2;
-   transition: all 400ms linear;
+   border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
 }
-#RollOver3 .hover
+#loginBtn.ui-corner-all
 {
-   opacity: 0;
-   transition: all 400ms linear;
+   border-bottom-right-radius: 4px;
+   border-top-right-radius: 4px;
 }
-#RollOver3:hover .hover
+#loginBtn.ui-button
 {
-   opacity: 1;
+   background-color: rgba(0,0,0,0.20);
+   background-image: none;
+   border: 1px solid #00FFFF;
+   color: #00FFFF;
 }
-#RollOver3:hover span
+#loginBtn.ui-state-hover, #loginBtn.ui-button:hover
 {
-   opacity: 0;
+   border-color: #CCCCCC;
+   background-color: #EDEDED;
+   background-image: none;
+   color: #2B2B2B;
 }
-#RollOver3 img
+#loginBtn.ui-state-active, #loginBtn.ui-button:active
 {
-   border-width: 0;
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   border-color: #2E6DA4;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
 }
-#RollOver4
+#wb_Icon1
 {
-   border: 0px solid #000000;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
    border-radius: 0px;
+   text-align: center;
    margin: 0;
+   padding: 0;
+   vertical-align: top;
 }
-#RollOver4 a
-{
-   display: block;
-   position: relative;
-   height: 100%;
-   width: 100%;
-}
-#RollOver4 a img
+#wb_Icon1 a::after
 {
    position: absolute;
-   z-index: 1;
-   border-width: 0;
-}
-#RollOver4 span
-{
-   display: block;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: 2;
-   transition: all 400ms linear;
-}
-#RollOver4 .hover
-{
-   opacity: 0;
-   transition: all 400ms linear;
-}
-#RollOver4:hover .hover
-{
-   opacity: 1;
-}
-#RollOver4:hover span
-{
-   opacity: 0;
-}
-#RollOver4 img
-{
-   border-width: 0;
-   position: absolute;
-   left: 0;
    top: 0;
-   width: 100%;
-   height: 100%;
-}
-#RollOver5
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   margin: 0;
-}
-#RollOver5 a
-{
-   display: block;
-   position: relative;
-   height: 100%;
-   width: 100%;
-}
-#RollOver5 a img
-{
-   position: absolute;
-   z-index: 1;
-   border-width: 0;
-}
-#RollOver5 span
-{
-   display: block;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: 2;
-   transition: all 400ms linear;
-}
-#RollOver5 .hover
-{
-   opacity: 0;
-   transition: all 400ms linear;
-}
-#RollOver5:hover .hover
-{
-   opacity: 1;
-}
-#RollOver5:hover span
-{
-   opacity: 0;
-}
-#RollOver5 img
-{
-   border-width: 0;
-   position: absolute;
+   right: 0;
+   bottom: 0;
    left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#Icon1
+{
+   height: 18px;
+   width: 18px;
+}
+#Icon1 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 18px;
+   line-height: 18px;
+   vertical-align: middle;
+   width: 17px;
+}
+#wb_Icon1:hover #Icon1 i
+{
+   color: #FFFFFF;
 }
 #wb_Icon2
 {
@@ -1045,22 +1019,6 @@ body
 {
    color: #FFFFFF;
 }
-#RollOver1
-{
-   position: absolute;
-   left: 80px;
-   top: 936px;
-   width: 405px;
-   height: 532px;
-   overflow: hidden;
-   z-index: 10;
-}
-#wb_uid5
-{
-   color: #C3A6D6;
-   font-family: "Zector";
-   font-size: 17px;
-}
 #wb_Icon1
 {
    position: absolute;
@@ -1069,7 +1027,7 @@ body
    width: 18px;
    height: 18px;
    text-align: center;
-   z-index: 5;
+   z-index: 11;
 }
 #Image2
 {
@@ -1078,25 +1036,25 @@ body
 }
 #wb_uid4
 {
-   color: #FFFFFF;
-   font-family: "LEMON MILK Bold";
-   font-size: 48px;
+   color: #C3A6D6;
+   font-family: "Zector";
+   font-size: 17px;
 }
 #wb_Marquee1
 {
    position: absolute;
-   left: 343px;
-   top: 715px;
+   left: 369px;
+   top: 93px;
    width: 674px;
    height: 35px;
    text-align: center;
-   z-index: 9;
+   z-index: 7;
 }
 #wb_uid3
 {
    color: #FFFFFF;
    font-family: "Zector";
-   font-size: 27px;
+   font-size: 48px;
 }
 #wb_Image1
 {
@@ -1105,24 +1063,14 @@ body
    top: 0px;
    width: 735px;
    height: 691px;
-   opacity: 0.20;
+   opacity: 0.05;
    z-index: 1;
-}
-#RollOver4
-{
-   position: absolute;
-   left: 328px;
-   top: 1515px;
-   width: 360px;
-   height: 540px;
-   overflow: hidden;
-   z-index: 13;
 }
 #wb_uid2
 {
    color: #7495B6;
    font-family: "LEMON MILK Bold";
-   font-size: 107px;
+   font-size: 29px;
 }
 #wb_Image2
 {
@@ -1134,27 +1082,51 @@ body
    opacity: 0.06;
    z-index: 0;
 }
-#RollOver5
+#wb_Editbox2
 {
    position: absolute;
-   left: 760px;
-   top: 1583px;
-   width: 405px;
-   height: 532px;
-   overflow: hidden;
-   z-index: 14;
+   left: 446px;
+   top: 414px;
+   width: 485px;
+   height: 65px;
+   z-index: 9;
+}
+#Editbox1
+{
+   border-top: yellow;
+   border-left: yellow;
+   border-right: yellow;
+   border-width: 2px;
+   border-color: cyan;
 }
 #wb_uid1
 {
    color: #91B392;
    font-family: "LEMON MILK Bold";
-   font-size: 107px;
+   font-size: 29px;
+}
+#loginBtn
+{
+   position: absolute;
+   left: 446px;
+   top: 526px;
+   width: 485px;
+   height: 65px;
+   z-index: 10;
+}
+#Editbox2
+{
+   border-top: yellow;
+   border-left: yellow;
+   border-right: yellow;
+   border-width: 2px;
+   border-color: cyan;
 }
 #wb_uid0
 {
    color: #C3A6D6;
    font-family: "LEMON MILK Bold";
-   font-size: 107px;
+   font-size: 29px;
 }
 #Line1
 {
@@ -1164,38 +1136,34 @@ body
    width: 498px;
    z-index: 4;
 }
+#wb_Editbox1
+{
+   position: absolute;
+   left: 446px;
+   top: 324px;
+   width: 485px;
+   height: 65px;
+   z-index: 8;
+}
 #wb_Text1
 {
    position: absolute;
-   left: 349px;
-   top: 208px;
-   width: 679px;
-   height: 144px;
+   left: 15px;
+   top: 22px;
+   width: 205px;
+   height: 40px;
+   text-align: center;
    z-index: 2;
 }
 #wb_Text2
 {
    position: absolute;
    left: 554px;
-   top: 378px;
+   top: 193px;
    width: 252px;
-   height: 80px;
+   height: 48px;
    text-align: center;
-   z-index: 7;
-}
-#wb_Text3
-{
-   position: absolute;
-   left: 349px;
-   top: 740px;
-   width: 679px;
-   height: 65px;
-   text-align: center;
-   z-index: 8;
-}
-#wb_uid9
-{
-   object-fit: cover;
+   z-index: 6;
 }
 #wb_Icon2
 {
@@ -1205,34 +1173,6 @@ body
    width: 18px;
    height: 18px;
    text-align: center;
-   z-index: 15;
-}
-#wb_uid8
-{
-   object-fit: cover;
-}
-#RollOver2
-{
-   position: absolute;
-   left: 914px;
-   top: 936px;
-   width: 386px;
-   height: 579px;
-   overflow: hidden;
-   z-index: 11;
-}
-#wb_uid7
-{
-   object-fit: cover;
-}
-#RollOver3
-{
-   position: absolute;
-   left: 528px;
-   top: 959px;
-   width: 321px;
-   height: 434px;
-   overflow: hidden;
    z-index: 12;
 }
 #wb_Icon3
@@ -1243,7 +1183,7 @@ body
    width: 20px;
    height: 20px;
    text-align: center;
-   z-index: 6;
+   z-index: 5;
 }
 #wb_DropdownMenu1
 {
@@ -1254,12 +1194,14 @@ body
    height: 38px;
    z-index: 3;
 }
-#wb_uid6
-{
-   object-fit: cover;
-}
 #Image1
 {
    user-select: none;
    -webkit-user-drag: none;
+}
+ #loginBtn{
+      transition: all 0.3s ease-in-out;
+  }
+   #loginBtn:hover {
+    box-shadow: 0px 0px 20px #858585ad, 0px 0px 3px #ffffff;
 }
